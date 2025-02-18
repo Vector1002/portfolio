@@ -10,7 +10,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">David LI </span>
             from <span className="purple"> Calgary, Canada.</span><br/>
-            I am a FULL STACK developer.
+            I am a Full-Stack, Blockchain developer.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!

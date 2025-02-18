@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
+import uniswap from "../../Assets/Projects/uniswap.png";
+import sog from "../../Assets/Projects/sog.jpg";
 import frontenddev from "../../Assets/Projects/frontenddev.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
@@ -31,16 +31,6 @@ function Projects() {
               demoLink="https://chatify-49.web.app/"
             />
           </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/Vector1002/plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -58,7 +48,7 @@ function Projects() {
               imgPath={frontenddev}
               isBlog={false}
               title="Frontend Dev"
-              description="Technology used: React Js, Mantine UI, Context API. Useful repo for most common frontend challenges."
+              description="Technology used: React Js, Mantine UI, Context API. From responsive design and UI patterns to reusable code snippets, these resources help me deliver clean, efficient solutions. By integrating these tools into my workflow, I ensure that projects are both scalable and maintainable."
               ghLink="https://github.com/Vector1002/frontenddev"
               demoLink="https://www.frontenddev.site/" 
             />
@@ -66,22 +56,30 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={bookheap}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/Vector1002/Face_And_Emotion_Detection" 
+              title="Online Book Store"
+              description="An online bookstore built using the MERN stack that allows users to search, browse, and purchase books. The backend securely handles user authentication, orders, and payment processing. The React frontend provides an intuitive and responsive interface for a seamless shopping experience."
+              ghLink="https://github.com/Vector1002/bookheap" 
+              demoLink="https://bookheap-app.netlify.app/" 
             />
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bookheap}
+              imgPath={sog}
               isBlog={false}
-              title="Online Book Store"
-              description="Tech Stack: MERN Stack. It is a book selling web app built in a MERN stack . You can sell books by uploading images and can also see what others are selling."
-              ghLink="https://github.com/Vector1002/bookheap" 
-              demoLink="https://bookheap-app.netlify.app/" 
+              title="Solana Staking for Meme coins"
+              description="Role: Blockchain developer. NFT marketplaces are a booming trend today They allow minting and trading of NFTs – non-fungible tokens that possess certain value in the crypto world. Anything can become an NFT – from a work of art to a real estate item – making the use cases for NFTs unlimited."
+              demoLink="https://signifty.me" 
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={uniswap}
+              isBlog={false}
+              title="Smart Contract"
+              description="Technology used: TypeScript, JavaScript, Shell. Discover millions deployed Smart Contracts across over 260 blockchains.Easy to read and write Smart Contract's data with a friendly UI.Sign your request in many ways: with Browser using Metamask Wallet, Binance Wallet, or with TrustWallet's WalletConnect protocol, Coinbase's WalletLink protocol, or importing your wallet from key.  "
+              ghLink="https://github.com/Vector1002/UI-smart-contract/"
             />
           </Col>
         </Row>
